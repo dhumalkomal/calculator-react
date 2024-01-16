@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+// importing css styles from Styles folder 
+import styles from "./Styles/app.module.css";
+
+// importing Calculator component form Component folder
+import Calculator from "./Components/Calculator";
+
+
+// render app function
 function App() {
+
+  // return the main page of application
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // main container 
+    <div className={styles.mainContainer}>
+      
+      {/* div containing page heading */}
+      <div className={styles.heading}>
+        <h1>Calculator</h1>
+      </div>
+
+      {/* render the calculator */}
+      <Calculator />    
     </div>
   );
 }

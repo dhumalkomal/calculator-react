@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* styling the scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1dda1;
+  border-radius: 10px;
+  height: 10px;
+}
+
+
+
+/* using grid layout in calculator buttons */
+/* a specific style to '0' button on Calculator to make it span two colums */
+.card16{
+  grid-column: 1 / 3;
+}
